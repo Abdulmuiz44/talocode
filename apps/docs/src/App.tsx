@@ -1198,12 +1198,13 @@ Every Talocode product ships as an open-source package first. You can \`npm inst
 | **Tera** | \`@talocode/sdk\` | Chat, writing, code generation |
 | **ClipLoop** | \`@talocode/cliploop\` | Prompt-to-video engine |
 | **Tradia** | \`@talocode/tradia\` | Agentic trading intelligence |
-| **WorkLane** | \`@talocode/worklane\` | AI coworker platform for teams |
+| **WorkLane** | \`@talocode/worklane\` | AI coworker platform with socials publishing: one publish call posts to Facebook, Instagram, Threads, Telegram, and X. Hosted via \`TALOCODE_API_KEY\`. |
 | **Codra** | \`@talocode/sdk\` | Code review and planning |
 
 ## What's Next
 
-- **Netlify deployment** for api.talocode.site, cloud, docs, and dashboard (pending credit reset)
+- **WorkLane Socials hosted API** — live on api.talocode.site at \`/v1/worklane/socials/publish\` (5 platforms, receipts included)
+- **YouTube automation** — launch and tutorial uploads for @talocode
 - **Agent Browser API** — Web Intelligence for extract and analyze
 - **Next-gen ClipLoop** — HyperFrames-powered rendering
 - **Tradia v0.2** — Multi-strategy backtesting, Telegram integration

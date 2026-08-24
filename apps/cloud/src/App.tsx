@@ -56,8 +56,8 @@ const products = [
   },
   {
     name: "WorkLane",
-    desc: "Agent workflow orchestration with human approval gates for consequential actions.",
-    status: "pending",
+    desc: "Agent coworker platform with socials publishing: one publish call posts to Facebook, Instagram, Threads, Telegram, and X. Bring your own keys or scale hosted with TALOCODE_API_KEY.",
+    status: "live",
   },
   {
     name: "SearchLane",
