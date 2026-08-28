@@ -66,7 +66,7 @@ export default function BillingView() {
 
   const handleOpenBillingPortal = () => {
     if (!billingUrl) {
-      toast('Billing portal URL is not configured yet.', 'info')
+      toast('Lemon Squeezy billing portal not yet linked. Contact support to manage payment methods.', 'info')
       return
     }
     const url = billingUrl.includes('?')
