@@ -261,16 +261,16 @@ function Hero() {
           >
             Docs
           </a>
-          <span
-            className="inline-flex h-10 cursor-not-allowed items-center rounded-[10px] border px-5 text-sm font-medium opacity-50"
+          <a
+            href="https://dashboard.talocode.site"
+            className="inline-flex h-10 items-center rounded-[10px] border px-5 text-sm font-medium transition-colors hover:bg-[#1e1e1e]"
             style={{
               borderColor: "#222222",
-              color: "#888888",
+              color: "#e5e5e5",
             }}
-            title="Coming soon"
           >
             Dashboard
-          </span>
+          </a>
           <a
             href="https://github.com/talocode"
             className="inline-flex h-10 items-center rounded-[10px] border px-5 text-sm font-medium transition-colors hover:bg-[#1e1e1e]"
@@ -352,10 +352,10 @@ function ApiDetails() {
           style={{
             backgroundColor: "#161616",
             borderColor: "#2a2a2a",
-            color: "#facc15",
+            color: "#4ade80",
           }}
         >
-          API deployment pending. Endpoints are not yet live.
+          API is live at api.talocode.site. All endpoints active.
         </div>
       </div>
     </section>
@@ -484,8 +484,8 @@ function SdkQuickstart() {
         >
           <code>{quickstartCode}</code>
         </pre>
-        <p className="mt-4 text-sm" style={{ color: "#facc15" }}>
-          SDK is available. API backend deployment pending.
+        <p className="mt-4 text-sm" style={{ color: "#4ade80" }}>
+          SDK is available. API backend is live at api.talocode.site.
         </p>
       </div>
     </section>
@@ -547,8 +547,8 @@ function McpQuickstart() {
         >
           <code>{mcpConfig}</code>
         </pre>
-        <p className="mt-4 text-sm" style={{ color: "#facc15" }}>
-          MCP endpoint pending backend deployment.
+        <p className="mt-4 text-sm" style={{ color: "#4ade80" }}>
+          MCP endpoint live at api.talocode.site/mcp.
         </p>
       </div>
     </section>
@@ -579,7 +579,7 @@ function StatusSection() {
                 style={{ backgroundColor: "#22c55e" }}
               />
               <span style={{ color: "#888888" }}>
-                <span className="text-white">DocuLane</span> &mdash; Live (npm + PyPI)
+                <span className="text-white">Cloud API</span> — Live at api.talocode.site
               </span>
             </li>
             <li className="flex items-center gap-3">
@@ -588,37 +588,25 @@ function StatusSection() {
                 style={{ backgroundColor: "#22c55e" }}
               />
               <span style={{ color: "#888888" }}>
-                <span className="text-white">XSearchLane</span> &mdash; Live (npm + PyPI)
+                <span className="text-white">Cloud Dashboard</span> — Live at dashboard.talocode.site
               </span>
             </li>
             <li className="flex items-center gap-3">
               <span
                 className="inline-block h-2 w-2 shrink-0 rounded-full"
-                style={{ backgroundColor: "#facc15" }}
+                style={{ backgroundColor: "#22c55e" }}
               />
               <span style={{ color: "#888888" }}>
-                <span className="text-white">Cloud Dashboard</span> &mdash; Backend API
-                deployment pending
+                <span className="text-white">$TCODE</span> — Live, hold-to-earn credits
               </span>
             </li>
             <li className="flex items-center gap-3">
               <span
                 className="inline-block h-2 w-2 shrink-0 rounded-full"
-                style={{ backgroundColor: "#888888" }}
+                style={{ backgroundColor: "#22c55e" }}
               />
-              <span style={{ color: "#666666" }}>
-                <span style={{ color: "#888888" }}>Wallet / Top-ups</span> &mdash; Coming
-                next
-              </span>
-            </li>
-            <li className="flex items-center gap-3">
-              <span
-                className="inline-block h-2 w-2 shrink-0 rounded-full"
-                style={{ backgroundColor: "#888888" }}
-              />
-              <span style={{ color: "#666666" }}>
-                <span style={{ color: "#888888" }}>Full API availability</span> &mdash;
-                After api.talocode.site deployment
+              <span style={{ color: "#888888" }}>
+                <span className="text-white">DocuLane, SearchLane, XSearchLane, WorkLane</span> — Live
               </span>
             </li>
           </ul>
@@ -635,6 +623,9 @@ function Footer() {
     { label: "Dashboard", href: "https://dashboard.talocode.site" },
     { label: "Pricing", href: "https://docs.talocode.site/pricing" },
     { label: "API", href: "https://api.talocode.site" },
+    { label: "X", href: "https://x.com/talocode" },
+    { label: "YouTube", href: "https://www.youtube.com/@talocode" },
+    { label: "Telegram", href: "https://t.me/talocodechannel" },
   ];
 
   return (
