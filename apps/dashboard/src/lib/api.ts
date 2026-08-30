@@ -111,6 +111,40 @@ export type CloudUsageEvent = {
   createdAt: string
 }
 
+export type TcodeTier = {
+  key: string
+  minTCODE: number
+  monthlyCredits: number
+}
+
+export type TcodeHoldings = {
+  projectId: string
+  walletAddress: string
+  rawBalance: string
+  decimals: number
+  tcodeTokens: number
+  tier: TcodeTier | null
+  period: string
+  claimedThisPeriod: boolean
+  linkedAt: string
+}
+
+export type TcodeChallenge = {
+  nonce: string
+  expiresAt: string
+  message: string
+}
+
+export type TcodeClaimResult = {
+  granted: number
+  alreadyClaimed: boolean
+  reason: string
+  period: string
+  tier: TcodeTier | null
+  tcodeTokens: number
+  balance: number | null
+}
+
 export type TopupIntent = {
   topup: { id: string; amount: number; status: string; walletId?: string }
   checkoutUrl: string | null
@@ -168,4 +202,30 @@ export const api = {
     }),
 
   pricing: () => request<unknown>('/api/v1/cloud/pricing'),
+
+  createTcodeChallenge: (projectId: string) =>
+    request<TcodeChallenge>('/api/v1/cloud/tcode/challenge', {
+      method: 'POST',
+      body: JSON.stringify({ projectId }),
+    }),
+
+  linkTcodeWallet: (input: {
+    projectId: string
+    walletAddress: string
+    signature: string
+    nonce: string
+  }) =>
+    request<{ linked: boolean; walletAddress: string }>('/api/v1/cloud/tcode/link', {
+      method: 'POST',
+      body: JSON.stringify(input),
+    }),
+
+  getTcodeHoldings: (projectId: string) =>
+    request<TcodeHoldings>(`/api/v1/cloud/tcode/holdings?projectId=${encodeURIComponent(projectId)}`),
+
+  claimTcodeCredits: (projectId: string) =>
+    request<TcodeClaimResult>('/api/v1/cloud/tcode/claim', {
+      method: 'POST',
+      body: JSON.stringify({ projectId }),
+    }),
 }

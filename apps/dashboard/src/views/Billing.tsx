@@ -4,6 +4,7 @@ import TransactionHistory from '../components/TransactionHistory'
 import { CheckIcon, PlusIcon } from '../icons'
 import { startCreditCheckout } from '../checkout'
 import { useToast } from '../components/Toast'
+import TcodeHoldPanel from '../components/TcodeHoldPanel'
 import { api, type CloudWallet, type CloudWalletTx } from '../lib/api'
 import { useProject } from '../lib/project'
 
@@ -160,6 +161,8 @@ export default function BillingView() {
           </div>
         </div>
       </div>
+
+      {project ? <TcodeHoldPanel projectId={project.id} onClaimed={() => void load()} /> : null}
 
       <div className="mb-6">
         <div className="rounded-xl border border-border bg-panel p-5">
