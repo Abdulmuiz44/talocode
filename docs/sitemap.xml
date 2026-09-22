@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://talocode.site/</loc></url>
-  <url><loc>https://talocode.site/api.html</loc></url>
-  <url><loc>https://talocode.site/cloud.html</loc></url>
-  <url><loc>https://talocode.site/docs.html</loc></url>
-  <url><loc>https://talocode.site/mcp.html</loc></url>
-  <url><loc>https://talocode.site/pricing.html</loc></url>
-  <url><loc>https://talocode.site/tcode.html</loc></url>
-  <url><loc>https://talocode.site/tcode/</loc></url>
+  <url><loc>https://talocode.site/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://talocode.site/cloud.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://talocode.site/pricing.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://talocode.site/docs.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://talocode.site/api.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://talocode.site/mcp.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://talocode.site/skills.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://talocode.site/tcode.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://talocode.site/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>

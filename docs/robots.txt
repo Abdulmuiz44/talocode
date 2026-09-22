@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Ops / internal markdown should not be indexed
+Disallow: /*.md$
+Disallow: /DNS_TALOCODE_SITE.md
+Disallow: /404.html
+
+Sitemap: https://talocode.site/sitemap.xml
